@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de pet</title>
+  <link rel="stylesheet" href="styles/registro-pet.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="images/logo.png">
+
+</head>
+
+<!-- NAVBAR -->
+
+<body>
+  <div class="box-area">
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="index.html">PETFINDER</a>
+        </div>
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="contato.html">Contato</a>
+          <a href="login.html">Login/Registro</a>
+        </nav>
+      </div>
+  </div>
+
+  <!--CONTEUDO DO SITE-->
+
+  <div class="content-area">
+    <div class="wrapper2">
+
+      <form action="php/registro-pet.php" method="POST">
+        <!--CONEXAO COM O PHP-->
+        <!-- FORMULARIO-->
+
+        <div class="container">
+          <div class="title">Cadastre o seu pet!</div>
+
+          <div class="content">
+              <div class="user-details">
+                <div class="input-box">
+                  <span class="details">Nome do pet</span>
+                  <input type="text" placeholder="Informe o nome do seu pet" required>
+                </div>
+
+                <div class="input-box">
+                  <span class="details">Cor do pet</span>
+                  <input type="text" placeholder="Informe a cor do seu pet" required>
+                </div>
+
+                <div class="input-box">
+                  <span class="details">Endereço</span>
+                  <input type="text" placeholder="Informe onde o animal foi visto pela última vez." required>
+                </div>
+
+                <input class="photo" type="file" />
+
+              </div>
+
+              <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Espécie</span>
+                <div class="category">
+
+                  <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Cachorro</span>
+                  </label>
+
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Gato</span>
+                  </label>
+
+                  <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="gender">Outro</span>
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="button">
+                <input type="submit" value="Enviar dados">
+              </div>
+      </form>
+
+      <p class="info-regis"> * Caso seu pet não seja gato nem cachorro, marque a opção "outro" e informe a
+        espécie na aba "cor do pet".
+        <b>ex: Passáro amarelo</b>
+      </p>
+    </div>
+  </div> <br><br><br>
+  <!--PULA UMA LINHA-->
+
+  <p class="links-banner">Ainda não efetuou o seu login? Clique <a href="login.html">aqui</a> para entrar em sua
+    conta. <br>
+    Ainda não é cadastrado em nosso site? Clique <a href="#">aqui</a> para se cadastrar.</p>
+  </p>
+  </div>
+
+  <!-- FOOTER  -->
+
+  <footer>
+    <div class="footer-content">
+      <h3> petFinder </h3>
+      <p> Nosso trabalho é te fazer encontrar o seu Pet, deixe seu feedback e tire dúvidas nas
+        redes sociais.
+      </p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-google"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2022 petFinder. designed by <span> JMPG's Group. </span></p>
+    </div>
+  </footer>
+
+  </div>
+  </div>
+</body>
+
+</html>
