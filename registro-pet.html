@@ -32,85 +32,87 @@
       </div>
   </div>
 
-  <!--CONTEUDO DO SITE-->
+  <!-- FORMULARIO-->
 
   <div class="content-area">
-    <div class="wrapper2">
 
-      <form action="php/registro-pet.php" method="POST">
-        <!--CONEXAO COM O PHP-->
-        <!-- FORMULARIO-->
+    <div class="container"> <!--Caixa branca atras do forms-->
+      
+      <h2 class="titulo">Cadastre seu pet</h2>
 
-        <div class="container">
-          <div class="title">Cadastre o seu pet!</div>
+      <form action="php/registro-pet.php" method="post">
+      <section>
 
-          <div class="content">
-              <div class="user-details">
-                <div class="input-box">
-                  <span class="details">Nome do pet</span>
-                  <input type="text" placeholder="Informe o nome do seu pet" required>
-                </div>
+        <div class="divisao-1">
+          <label class="name" for="animal-name">Nome do Animal</label>
+          <input class="holder" type="text" id="animal-name" placeholder="informe o nome do seu pet">
 
-                <div class="input-box">
-                  <span class="details">Cor do pet</span>
-                  <input type="text" placeholder="Informe a cor do seu pet" required>
-                </div>
+          <label class="name" for="animal-color">Cor do Animal</label>
+          <input class="holder" type="text" id="animal-color" placeholder="informe a cor do pet">
 
-                <div class="input-box">
-                  <span class="details">Endereço</span>
-                  <input type="text" placeholder="Informe onde o animal foi visto pela última vez." required>
-                </div>
+          <label class="name" for="animal-select">Selecione o seu Animal</label>
+          <select name="" id="animal-select">
+              <option value="">Cachorro</option>
+              <option value="">Gato</option>
+              <option value="">Outros</option>
+          </select>
 
-                <input class="photo" type="file" />
+          <label class="animal-photo" for="animal-picutre">Foto do Animal</label>
+          <input type="file" id="animal-picutre">
+      </div>
 
-              </div>
+      <div class="divisao-2">
+          <label class="name" for="animal-city">Cidade</label>
+          <input class="holder" type="text" id="animal-city" placeholder="informe sua cidade">
 
-              <div class="gender-details">
-                <input type="radio" name="gender" id="dot-1">
-                <input type="radio" name="gender" id="dot-2">
-                <input type="radio" name="gender" id="dot-3">
-                <span class="gender-title">Espécie</span>
-                <div class="category">
+          <label class="name" for="animal-block">Bairro</label>
+          <input class="holder" type="text" id="animal-block" placeholder="informe seu bairro">
 
-                  <label for="dot-1">
-                    <span class="dot one"></span>
-                    <span class="gender">Cachorro</span>
-                  </label>
+          <label class="name" for="animal-point">Ponto de Referencia</label>
+          <input class="holder" type="text" id="animal-point" placeholder="informe um ponto de referencia">
 
-                  <label for="dot-2">
-                    <span class="dot two"></span>
-                    <span class="gender">Gato</span>
-                  </label>
+          <label class="name" for="animal-state">Selecione seu Estado</label>
+          <select name="" id="animal-state">
+            <option value="ac">AC</option>
+            <option value="al">AL</option>
+            <option value="ap">AP</option>
+            <option value="am">AM</option>
+            <option value="ba">BA</option>
+            <option value="ce">CE</option>
+            <option value="es">ES</option>
+            <option value="ga">GO</option>
+            <option value="ma">MA</option>
+            <option value="mt">MT</option>
+            <option value="ms">MS</option>
+            <option value="mg">MG</option>
+            <option value="pa">PA</option>
+            <option value="pb">PB</option>
+            <option value="pr">PR</option>
+            <option value="pe">PE</option>
+            <option value="pi">PI</option>
+            <option value="rj">RJ</option>
+            <option value="rn">RN</option>
+            <option value="rs">RS</option>
+            <option value="ro">RO</option>
+            <option value="pr">RR</option>
+            <option value="sc">SC</option>
+            <option value="sp">SP</option>
+            <option value="se">SE</option>
+            <option value="to">TO</option>
+            <option value="df">DF</option>
+          </select>
+ 
+          <button type="submit" style="margin-bottom:8px;">Enviar</button>
 
-                  <label for="dot-3">
-                    <span class="dot three"></span>
-                    <span class="gender">Outro</span>
-                  </label>
-                </div>
+      </div>
 
-              </div>
+  </form>
+</section> 
 
-              <div class="button">
-                <input type="submit" value="Enviar dados">
-              </div>
-      </form>
-
-      <p class="info-regis"> * Caso seu pet não seja gato nem cachorro, marque a opção "outro" e informe a
-        espécie na aba "cor do pet".
-        <b>ex: Passáro amarelo</b>
-      </p>
-    </div>
-  </div> <br><br><br>
-  <!--PULA UMA LINHA-->
-
-  <p class="links-banner">Ainda não efetuou o seu login? Clique <a href="login.html">aqui</a> para entrar em sua
-    conta. <br>
-    Ainda não é cadastrado em nosso site? Clique <a href="#">aqui</a> para se cadastrar.</p>
-  </p>
-  </div>
-
+    </div><!--Fechamento do container-->
+  </div><!--Div do content-area-->
+  
   <!-- FOOTER  -->
-
   <footer>
     <div class="footer-content">
       <h3> petFinder </h3>
@@ -125,13 +127,13 @@
         <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
       </ul>
     </div>
+
     <div class="footer-bottom">
       <p>copyright &copy;2022 petFinder. designed by <span> JMPG's Group. </span></p>
     </div>
+
   </footer>
 
-  </div>
-  </div>
 </body>
 
 </html>
